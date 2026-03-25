@@ -70,7 +70,7 @@ nav a:hover {
 
 /* logo image */
 .logo-container img {
-  height: 100px;
+  height: 85px;
   object-fit: contain;
 }
 
@@ -81,6 +81,8 @@ nav a:hover {
   font-weight: 600;
   /* color: white; */
   color: #0f172a;
+ display: flex;
+ align-items: center;
 
   letter-spacing: 1px;
 }
@@ -92,6 +94,7 @@ nav a:hover {
 
 .logo-text.right {
   text-align: left;
+  color: #38bdf8;;
 }
 
 /* HERO */
@@ -314,7 +317,7 @@ div.card a {
 }
 
 .about-box {
-  background: #f8fafc;
+  background:hsl(198, 80%, 70%);;
   padding: 25px;
   border-radius: 12px;
   width: 280px;
