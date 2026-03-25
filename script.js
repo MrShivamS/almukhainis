@@ -21,8 +21,6 @@ function nextSlide() {
 
 setInterval(nextSlide, 4500);
 
-
-
 // Auto Slide (important for professional feel)
 setInterval(nextSlide, 4500);
 

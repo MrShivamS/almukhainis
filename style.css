@@ -218,16 +218,16 @@ section {
 }
 
 .cards {
-  /* display: flex;
+  display: flex;
   gap: 30px;
   margin-top: 40px;
   justify-content: center;
-  flex-wrap: wrap; */
-  display: grid;
+  flex-wrap: wrap;
+  /* display: grid;
   grid-template-columns: repeat(2, 320px);
   gap: 50px;
   justify-content: center;
-  margin: auto;
+  margin: auto; */
   margin-top: 40px;
   justify-items: center;
 }
@@ -241,17 +241,17 @@ section {
   /* width: 280px; */
   width: 100%;
   max-width: 350px;
-  margin: auto;
+  /* margin: auto;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; */
   align-items: center;
   transition: 0.4s;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 div.card a {
-  display: flex;
+  /* display: flex; */
   width: 115px;
 
   align-items: center;
