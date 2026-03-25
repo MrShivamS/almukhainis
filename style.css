@@ -1,14 +1,14 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  background: #0f172a;
-  color: white;
+  color: #0f172a;
+  /* color: white; */
+  background: white;
 }
 
 /* NAVBAR */
@@ -18,7 +18,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0px 40px;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
@@ -26,25 +26,28 @@ header {
 }
 /* HAMBURGER */
 .menu-toggle {
-   display: none;
+  display: none;
   font-size: 28px;
   cursor: pointer;
-  color: white;
+  /* color: white; */
+  color: #0f172a;
+
   z-index: 1000;
 }
 
-nav{
+nav {
   display: flex;
   /* z-index: 999;
   transition: 0.3s ease; */
   /* display: none; */
-
 }
 
 nav a {
   margin-left: 35px;
   /* justify-content: space-between; */
-  color: white;
+  /* color: white; */
+  color: #0f172a;
+
   text-decoration: none;
   transition: 0.3s;
   /* display: block; */
@@ -55,9 +58,9 @@ nav a:hover {
   color: #38bdf8;
 }
 
- @font-face {
-  font-family: 'Ldiqlat';
-  src: url('fonts/Idiqlat-ExtraLight.ttf') format('truetype');
+@font-face {
+  font-family: "Ldiqlat";
+  src: url("fonts/Idiqlat-ExtraLight.ttf") format("truetype");
 }
 .logo-container {
   display: flex;
@@ -67,16 +70,18 @@ nav a:hover {
 
 /* logo image */
 .logo-container img {
-  height: 70px;
+  height: 90px;
   object-fit: contain;
 }
 
 /* text styling */
 .logo-text {
-  font-size: 16px;
-  font-family: 'Ldiqlat', sans-serif;
+  font-size: 20px;
+  font-family: "Ldiqlat", sans-serif;
   font-weight: 600;
-  color: white;
+  /* color: white; */
+  color: #0f172a;
+
   letter-spacing: 1px;
 }
 
@@ -88,7 +93,6 @@ nav a:hover {
 .logo-text.right {
   text-align: left;
 }
-
 
 /* HERO */
 .carousel {
@@ -129,6 +133,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   background: linear-gradient(135deg, #1e293b, #0f172a);
+  /* background: linear-gradient(135deg,rgb(159, 152, 152), white); */
   text-align: center;
   padding: 20px;
 }
@@ -154,7 +159,6 @@ nav a:hover {
 }
 /* HERO FIX */
 
-
 /* SLIDES */
 .slide {
   position: absolute;
@@ -164,7 +168,7 @@ nav a:hover {
   left: 0;
   background-size: cover;
   background-position: center;
-background-repeat:no-repeat ;
+  background-repeat: no-repeat;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
@@ -194,9 +198,11 @@ background-repeat:no-repeat ;
 .overlay h1 {
   font-size: 48px;
   margin-bottom: 15px;
+  color: #f8fafc;
 }
 
 .overlay p {
+  color: #f8fafc;
   max-width: 600px;
   opacity: 0.9;
 }
@@ -212,21 +218,44 @@ section {
 }
 
 .cards {
-  display: flex;
+  /* display: flex;
   gap: 30px;
-  justify-content: center;
   margin-top: 40px;
-  flex-wrap: wrap;
+  justify-content: center;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(2, 320px);
+  gap: 50px;
+  justify-content: center;
+  margin: auto;
+  margin-top: 40px;
+  justify-items: center;
 }
 
 .card {
-  background: rgba(255,255,255,0.05);
+  background: #f8fafc;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   backdrop-filter: blur(15px);
   padding: 25px;
   border-radius: 15px;
-  width: 280px;
+  /* width: 280px; */
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   transition: 0.4s;
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+div.card a {
+  display: flex;
+  width: 115px;
+
+  align-items: center;
+  justify-content: center;
 }
 
 .card:hover {
@@ -237,10 +266,11 @@ section {
   margin-bottom: 10px;
 }
 
-.card p, .card li {
+.card p,
+.card li {
   font-size: 14px;
   opacity: 0.8;
- left: 0;
+  left: 0;
 }
 
 .card ul {
@@ -284,12 +314,13 @@ section {
 }
 
 .about-box {
-  background: rgba(255,255,255,0.05);
+  background: #f8fafc;
   padding: 25px;
   border-radius: 12px;
   width: 280px;
   backdrop-filter: blur(10px);
   transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .about-box:hover {
@@ -309,12 +340,12 @@ section {
   color: #38bdf8;
 }
 
-.services h2{
+.services h2 {
   display: flex;
   justify-content: center;
 }
 
-.extra h2{
+.extra h2 {
   display: flex;
   justify-content: center;
 }
@@ -340,7 +371,9 @@ section {
 }
 
 .why-box {
-  background: rgba(255,255,255,0.05);
+  /* background: rgba(255, 255, 255, 0.05); */
+  background: #f8fafc;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   padding: 25px;
   border-radius: 12px;
   backdrop-filter: blur(10px);
@@ -360,7 +393,6 @@ section {
   opacity: 0.8;
   font-size: 14px;
 }
-
 
 /* PROJECT */
 .experience {
@@ -382,7 +414,9 @@ section {
 }
 
 .exp-box {
-  background: rgba(255,255,255,0.05);
+  /* background: rgba(255, 255, 255, 0.05); */
+  background: #f8fafc;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   padding: 25px;
   border-radius: 12px;
   backdrop-filter: blur(10px);
@@ -405,25 +439,27 @@ section {
 }
 
 /* FOOTER */
+
 footer {
   text-align: center;
   padding: 20px;
-  background: #020617;
+  /* /* background: #020617; */
+  background: #eaeef3;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
-
 
 /* WHATSAPP */
 .whatsapp-btn {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #25D366;
+  background: #25d366;
   color: white;
   font-size: 24px;
   padding: 15px;
   border-radius: 50%;
   text-decoration: none;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: 0.3s;
   z-index: 1000;
 }
@@ -436,6 +472,8 @@ body {
 }
 /* CONTACTS */
 .contact {
+  background: #f8fafc;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   text-align: center;
 }
 
@@ -486,15 +524,9 @@ body {
   cursor: pointer;
 }
 
-
-
-
-
 @media (max-width: 768px) {
-
-
   /* Navbar */
-/* MOBILE NAVBAR FIX */
+  /* MOBILE NAVBAR FIX */
   header {
     flex-direction: row;
     justify-content: space-between;
@@ -520,12 +552,19 @@ body {
     font-size: 18px;
   }
   .logo-container img {
-      height: 40px;
-    }
+    height: 40px;
+  }
+  .cards {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+
+  .card {
+    max-width: 100%;
+  }
 }
-  
-  
-  /* header {
+
+/* header {
     flex-direction: column;
     align-items: center;
     padding: 15px;

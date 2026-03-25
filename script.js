@@ -19,12 +19,12 @@ function nextSlide() {
   showSlide(current);
 }
 
-setInterval(nextSlide, 5000);
+setInterval(nextSlide, 4500);
 
 
 
 // Auto Slide (important for professional feel)
-setInterval(nextSlide, 4000);
+setInterval(nextSlide, 4500);
 
 const form = document.getElementById("contactForm");
 
