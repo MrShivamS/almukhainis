@@ -50,7 +50,7 @@ const form = document.getElementById("contactForm");
 const loader = document.getElementById("loader");
 
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbwSU7itISsZ9zaS_H-RvXvsVRqaE2GryzrqZUziYy43UVUSmsBjIzhfuOePKOU_GV43IQ/exec";
+  "https://script.google.com/macros/s/AKfycbzdMBEKkHo2wNo-NthUuLAh4p00k04wGnt12wSGECSpaBCu3C712MqF6GheOilnGqHstw/exec";
 
 form.addEventListener("submit", async function (e) {
   e.preventDefault();
@@ -76,10 +76,10 @@ form.addEventListener("submit", async function (e) {
     });
 
     //  WhatsApp message
-    let whatsappMessage = `:%0AName: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+    let whatsappMessage = `%0AName: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
 
     //  open WhatsApp
-    window.open(`https://wa.me/917249853816?text=${whatsappMessage}`, "_blank");
+    window.open(`https://wa.me/+96898001166?text=${whatsappMessage}`, "_blank");
 
     form.reset();
   } catch (error) {

@@ -46,7 +46,6 @@ nav {
   height: auto;
   width: auto;
   background: transparent;
-  
 }
 
 nav a {
@@ -59,9 +58,8 @@ nav a {
 nav a:hover {
   color: #38bdf8;
 }
-#navLinks{
+#navLinks {
   font-weight: bold;
-
 }
 /* Logo Section */
 @font-face {
@@ -82,7 +80,7 @@ nav a:hover {
 }
 
 /* text styling */
-.logo-text { 
+.logo-text {
   font-size: 26px;
   white-space: nowrap;
   font-family: "Ldiqlat", sans-serif;
@@ -90,7 +88,7 @@ nav a:hover {
   color: #0f172a;
   display: flex;
   align-items: center;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 /* optional styling */
@@ -548,6 +546,9 @@ body {
 
 /* SPINNER */
 .spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50px;
   height: 50px;
   border: 5px solid #e2e8f0;
@@ -663,6 +664,10 @@ body {
   }
   .overlay p {
     font-size: 14px;
+  }
+  #loader,
+  .spinner {
+  display: none;
   }
 }
 @media (max-width: 768px) {
